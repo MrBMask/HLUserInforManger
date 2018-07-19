@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="姓名" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="c6H-e3-5QM">
+                                <rect key="frame" x="163" y="249" width="50" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="性别" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="S4g-m2-H2e">
+                                <rect key="frame" x="163" y="299" width="50" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="手机" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="jDA-be-d8Q">
+                                <rect key="frame" x="163" y="349" width="50" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="年龄" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Avw-WJ-1Zw">
+                                <rect key="frame" x="163" y="399" width="50" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gUT-55-JaO">
+                                <rect key="frame" x="158" y="469" width="60" height="31"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="60" id="9Ei-7n-jqL"/>
+                                    <constraint firstAttribute="height" constant="31" id="eGh-LJ-trd"/>
+                                </constraints>
+                                <state key="normal" title="保存"/>
+                                <connections>
+                                    <action selector="processSaveButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qzV-IL-NmT"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="H9S-eh-GhR">
+                                <rect key="frame" x="157" y="520" width="60" height="31"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="60" id="Cg1-5y-KJf"/>
+                                    <constraint firstAttribute="height" constant="31" id="HlR-hB-fRN"/>
+                                </constraints>
+                                <state key="normal" title="删除"/>
+                                <connections>
+                                    <action selector="processDelegateButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hbd-PO-ZYl"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0K7-Km-Zyh">
+                                <rect key="frame" x="157" y="571" width="60" height="31"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="31" id="02D-O5-6vh"/>
+                                    <constraint firstAttribute="width" constant="60" id="Evv-Ty-liJ"/>
+                                </constraints>
+                                <state key="normal" title="获取"/>
+                                <connections>
+                                    <action selector="processFetchButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="1Cs-4s-7fE"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="jDA-be-d8Q" firstAttribute="top" secondItem="S4g-m2-H2e" secondAttribute="bottom" constant="20" id="2Ra-w6-KLj"/>
+                            <constraint firstItem="H9S-eh-GhR" firstAttribute="top" secondItem="gUT-55-JaO" secondAttribute="bottom" constant="20" id="7O3-Hp-9Un"/>
+                            <constraint firstItem="gUT-55-JaO" firstAttribute="top" secondItem="Avw-WJ-1Zw" secondAttribute="bottom" constant="40" id="B8x-Cg-TIC"/>
+                            <constraint firstItem="H9S-eh-GhR" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Cgj-m3-S7b"/>
+                            <constraint firstItem="S4g-m2-H2e" firstAttribute="top" secondItem="c6H-e3-5QM" secondAttribute="bottom" constant="20" id="DEh-ZC-17S"/>
+                            <constraint firstItem="S4g-m2-H2e" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-20" id="Hds-mn-AmQ"/>
+                            <constraint firstItem="S4g-m2-H2e" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="NsQ-kv-khq"/>
+                            <constraint firstItem="0K7-Km-Zyh" firstAttribute="top" secondItem="H9S-eh-GhR" secondAttribute="bottom" constant="20" id="T1N-th-xbT"/>
+                            <constraint firstItem="gUT-55-JaO" firstAttribute="centerX" secondItem="Avw-WJ-1Zw" secondAttribute="centerX" id="UPZ-0h-bcj"/>
+                            <constraint firstItem="jDA-be-d8Q" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="W1m-d0-umW"/>
+                            <constraint firstItem="Avw-WJ-1Zw" firstAttribute="top" secondItem="jDA-be-d8Q" secondAttribute="bottom" constant="20" id="ar0-md-7pK"/>
+                            <constraint firstItem="Avw-WJ-1Zw" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="bhy-AR-vDU"/>
+                            <constraint firstItem="c6H-e3-5QM" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="q6W-LV-Ipm"/>
+                            <constraint firstItem="0K7-Km-Zyh" firstAttribute="leading" secondItem="H9S-eh-GhR" secondAttribute="leading" id="qYC-Cf-6xy"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="age" destination="Avw-WJ-1Zw" id="xZH-AS-DA5"/>
+                        <outlet property="name" destination="c6H-e3-5QM" id="rm2-Jv-0gu"/>
+                        <outlet property="phone" destination="jDA-be-d8Q" id="BEe-iQ-Nvc"/>
+                        <outlet property="sex" destination="S4g-m2-H2e" id="H5A-rq-Nch"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="32.799999999999997" y="33.733133433283363"/>
+        </scene>
+    </scenes>
+</document>
